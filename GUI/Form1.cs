@@ -28,13 +28,13 @@ namespace GUI
             //считываем значение а
             //проверка на корретность
             int res, a;
-            if (Int32.TryParse(textBox1.Text, out res)&& res > 0)
+            if (Int32.TryParse(textBox1.Text, out res)&& res > 199 && res < 301)
             {
                 a = res;
             }
             else
             {
-                MessageBox.Show("Неверное значение для параметра а." + " Введите, пожалуйста, целое число, больше 0.");
+                MessageBox.Show("Неверное значение для параметра а." + " Введите, пожалуйста, целое число, больше 199 и меньше 301.");
                 return;
             }
 
